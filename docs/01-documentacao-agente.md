@@ -5,39 +5,39 @@
 ### Problema
 > Qual problema financeiro seu agente resolve?
 
-[Sua descrição aqui]
+Falta de educação financeira quando usa cartão de crédito.
 
 ### Solução
 > Como o agente resolve esse problema de forma proativa?
 
-[Sua descrição aqui]
+Um agente inteligente que funciona como um “agente financeiro do cartão de crédito”, educando, alertando e intervindo antes do erro acontecer.
 
 ### Público-Alvo
 > Quem vai usar esse agente?
 
-[Sua descrição aqui]
+Foque em jovens adultos (22–35 anos) usuários de bancos digitais.
 
 ---
 
 ## Persona e Tom de Voz
 
 ### Nome do Agente
-[Nome escolhido]
+CrediMente
 
 ### Personalidade
 > Como o agente se comporta? (ex: consultivo, direto, educativo)
 
-[Sua descrição aqui]
+proteção + inteligência + controle + educação, sem parecer chato ou moralista.
 
 ### Tom de Comunicação
 > Formal, informal, técnico, acessível?
 
-[Sua descrição aqui]
+Formal
 
 ### Exemplos de Linguagem
-- Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
-- Confirmação: [ex: "Entendi! Deixa eu verificar isso para você."]
-- Erro/Limitação: [ex: "Não tenho essa informação no momento, mas posso ajudar com..."]
+- Saudação: [ex: "Olá! Estou aqui para te ajudar a usar seu cartão com mais segurança. O que você quer analisar hoje?"]
+- Confirmação: [ex: "Perfeito, vou calcular o impacto dessa compra."]
+- Erro/Limitação: [ex: "Não tenho acesso direto a essa informação agora, mas posso estimar com base nos seus dados recentes."]
 
 ---
 
@@ -59,9 +59,9 @@ flowchart TD
 
 | Componente | Descrição |
 |------------|-----------|
-| Interface | [ex: Chatbot em Streamlit] |
-| LLM | [ex: GPT-4 via API] |
-| Base de Conhecimento | [ex: JSON/CSV com dados do cliente] |
+| Interface | [ex: Streamlit] |
+| LLM | [ex: Ollama (local)] |
+| Base de Conhecimento | [ex: JSON/CSV com dados do mockados] |
 | Validação | [ex: Checagem de alucinações] |
 
 ---
@@ -71,11 +71,11 @@ flowchart TD
 ### Estratégias Adotadas
 
 - [ ] [ex: Agente só responde com base nos dados fornecidos]
-- [ ] [ex: Respostas incluem fonte da informação]
 - [ ] [ex: Quando não sabe, admite e redireciona]
 - [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
 
 ### Limitações Declaradas
 > O que o agente NÃO faz?
 
-[Liste aqui as limitações explícitas do agente]
+- Não acessa dados bancarios sensiveis.
+- Não acessa o cartão de credito do usuário.
