@@ -4,12 +4,12 @@
 
 Descreva se usou os arquivos da pasta `data`, por exemplo:
 
-| Arquivo | Formato | Utilização no Agente |
+| Arquivo | Formato | Para que serve no CrediMente |
 |---------|---------|---------------------|
-| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
-| `perfil_investidor.json` | JSON | Personalizar recomendações |
-| `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil |
-| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
+| `historico_atendimento.csv` | CSV | Continuidade no atendimento |
+| `perfil_investidor.json` | JSON | Verificar como é o cliente |
+| `produtos_financeiros.json` | JSON | Os cartoes que esta cadastrados |
+| `transacoes.csv` | CSV | Analisar padrão de gastos do cartão do cliente |
 
 > [!TIP]
 > **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
@@ -29,12 +29,20 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 ### Como os dados são carregados?
 > Descreva como seu agente acessa a base de conhecimento.
 
-[ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
+Carregar os arquivos na propria aplicação
 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
 [Sua descrição aqui]
+
+```text
+
+DADOS DO CLIENTE
+PERFIL DO CLIENTE
+TRANSACOES DO CLIENTE
+HISTORICO DO CLIENTE
+```
 
 ---
 
